@@ -1,0 +1,39 @@
+Risultati operazioni del 
+Data => Monday 10/12/2018
+Ora => 14:14:24
+
+
+------------------------------------------------
+DATI:
+Somma: 60
+Media: 5.45
+Numero massimo: 8
+Numero minimo: 2
+Numeri pari inseriti: 9
+Numeri dispari inseriti: 2
+
+
+
+
+------------------------------------------------
+Cronologia numeri inseriti: 
+Numero 1: 6
+Numero 2: 4
+Numero 3: 6
+Numero 4: 8
+Numero 5: 6
+Numero 6: 5
+Numero 7: 5
+Numero 8: 2
+Numero 9: 3
+Numero 10: 7
+Numero 11: 8
+Numero 12: 0
+
+
+
+
+
+############################
+Made with <3 by Fede.Tensi
+############################
