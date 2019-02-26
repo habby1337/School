@@ -163,25 +163,34 @@ int main(){
 		differnza_f=diff(gg_inz_f,mm_inz_f,aa_inz_f,gg_fine_f,mm_fine_f,aa_fine_f);
 
 
-		if(differnza_f <= 20)
+		if(differnza_f >= 0)
 		{
-			cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::red <<differnza_f<< colore::reset <<" giorni"<<endl;
+			if(differnza_f <= 20)
+			{
+				cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::red <<differnza_f<< colore::reset <<" giorni"<<endl;
 	
+			}
+			else if(differnza_f <= 50)
+			{
+				cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::yellow <<differnza_f<< colore::reset <<" giorni"<<endl;
+	
+			}
+			else if(differnza_f < 100)
+			{
+				cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::green <<differnza_f<< colore::reset <<" giorni"<<endl;
+	
+ 			}
+			else
+			{
+				cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::green <<differnza_f<< colore::reset <<" giorni"<<endl;
+			}
 		}
-		else if(differnza_f <= 50)
-		{
-			cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::yellow <<differnza_f<< colore::reset <<" giorni"<<endl;
-	
-		}
-		else if(differnza_f < 100)
-		{
-			cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::green <<differnza_f<< colore::reset <<" giorni"<<endl;
-	
- 		}
 		else
 		{
-			cout<<"la fattura numero "<< colore::green <<i<< colore::reset << " scade tra: "<< colore::green <<differnza_f<< colore::reset <<" giorni"<<endl;
+			differnza_f *= -1;
+			cout<<"la fattura numero "<< colore::green <<i<< colore::reset << "e' scaduta da: "<< colore::red <<differnza_f<< colore::reset <<" giorni"<<endl;
 		}
+		
     	cout << endl;
     	
 	}
